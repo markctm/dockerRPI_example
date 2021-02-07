@@ -1,0 +1,16 @@
+version: '3'
+services:
+  docker-picamera-example:
+  build: 
+    dockerfile: Dockerfile
+    context: .
+  image:
+  container_name: docker-picamera-example
+  command: python3 picamera.py
+  volumes:
+    -/home/pi/Images_Cam
+  devices:
+    -/dev/vchiq:/dev/vchiq  #picamera
+    -/dev/vcsm:/dev/vcsm    #Videocore Shared Memory 
+  
+
