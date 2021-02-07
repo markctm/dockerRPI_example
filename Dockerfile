@@ -13,11 +13,11 @@ RUN apt-get install -y python3-pip
 
 WORKDIR /home/pi/Desktop/docker/Codigo
 
-ADD requirements.txt ./requirements.txt  
-COPY /home/pi/Desktop/docker/Codigo/ ./Codigo
+ADD requirements.txt ./requirements.txt
+ADD camera.py       ./camera.py
 
 RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install -r requirements.txt
 
-
+RUN python3 camera.py
  
