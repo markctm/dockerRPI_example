@@ -1,7 +1,12 @@
 FROM python:3.8
 
 
-USER pi
+ARG USER=pi
+ARG UID=1000
+ARG GID=1000
+# default password for user
+ARG PW=mark
+
 RUN sudo apt-get update
 RUN sudo apt-get install -y python3-pip
 RUN sudo apt-get install -y libraspberrypi-bin 
