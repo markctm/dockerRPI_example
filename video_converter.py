@@ -9,7 +9,7 @@ from datetime import datetime
 
 while(1):
     
-    time.sleep(2)
+    time.sleep(1)
 
     base_dir = os.path.realpath("/home/pi/Images_Cam/")
     directory1=sorted(os.listdir('/home/pi/Images_Cam/'))
