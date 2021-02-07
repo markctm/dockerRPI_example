@@ -7,9 +7,9 @@ ARG GID=1000
 # default password for user
 ARG PW=mark
 
-RUN sudo apt-get update
-RUN sudo apt-get install -y python3-pip
-RUN sudo apt-get install -y libraspberrypi-bin 
+RUN apt-get update
+RUN apt-get install -y python3-pip
+RUN apt-get install -y libraspberrypi-bin 
 
 WORKDIR /home/pi/Desktop/docker/Codigo
 
