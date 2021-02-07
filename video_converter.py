@@ -36,16 +36,7 @@ while(1):
         base_dir = os.path.realpath("/home/pi/Images_Cam/")
         directory=sorted(os.listdir('/home/pi/Images_Cam/'))
         print(directory)
-        
-        #clips = []
-
     
-        #for filename in directory:
-        #  print(filename)
-        #  if filename.endswith(".png"):            
-        #    clips.append(ImageClip("images/"+str(filename)).set_duration(0.06))
-                         
-        #print(clips)
         
         clip = ImageSequenceClip("/home/pi/Images_Cam/", fps=10)
         #timestamp=datetime.now().isoformat()
