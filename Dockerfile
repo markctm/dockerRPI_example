@@ -1,18 +1,18 @@
 FROM raspbian/fpixel
 
 
-USER root
+#USER root
 
-#ARG USER=pi
-#ARG UID=1000
-#ARG GID=1000
+ARG USER=pi
+ARG UID=1000
+ARG GID=1000
 # default password for user
-#ARG PW=mark
+ARG PW=mark
 
-RUN apt-get update
+RUN sudo apt-get update
 RUN sudo apt-get install python3.6
-RUN apt-get install -y python3-pip
-RUN apt-get install -y libraspberrypi-bin 
+RUN sudo apt-get install -y python3-pip
+RUN sudo apt-get install -y libraspberrypi-bin 
 
 WORKDIR /home/pi/Desktop/docker/Codigo
 
