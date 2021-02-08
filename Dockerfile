@@ -1,11 +1,13 @@
 FROM raspbian/fpixel
 
 
-ARG USER=pi
-ARG UID=1000
-ARG GID=1000
+USER root
+
+#ARG USER=pi
+#ARG UID=1000
+#ARG GID=1000
 # default password for user
-ARG PW=mark
+#ARG PW=mark
 
 RUN apt-get update
 RUN apt-get install -y python3-pip
@@ -22,3 +24,10 @@ RUN python3 -m pip install -r requirements.txt
 
 RUN python3 camera.py
  
+
+
+
+
+
+
+
