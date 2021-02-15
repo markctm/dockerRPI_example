@@ -2,7 +2,7 @@ FROM python:3
 
 USER root
 WORKDIR /home/pi/Desktop/docker/Codigo
-RUN sudo apt-get update
+RUN apt-get update
 RUN sudo apt-get install -y libraspberrypi-bin
 
 ADD requirements.txt ./requirements.txt
