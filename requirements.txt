@@ -7,7 +7,7 @@ imageio==2.9.0
 imageio-ffmpeg==0.4.3
 moviepy==1.0.3
 natsort==7.1.1
-numpy==1.20.0
+numpy
 picamera==1.13
 proglog==0.1.9
 Pillow==8.1.0
