@@ -10,7 +10,7 @@ natsort==7.1.1
 numpy
 picamera==1.13
 proglog==0.1.9
-Pillow==8.1.0
+Pillow
 pytz==2021.1
 requests==2.25.1
 tqdm==4.56.0
