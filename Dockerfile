@@ -3,7 +3,7 @@ FROM python:3
 USER root
 WORKDIR /home/pi/Desktop/docker/Codigo
 RUN apt-get update
-RUN sudo apt-get install -y libraspberrypi-bin
+RUN apt-get install -y libraspberrypi-bin
 
 ADD requirements.txt ./requirements.txt
 ADD camera.py       ./camera.py
