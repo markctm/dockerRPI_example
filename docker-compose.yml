@@ -3,14 +3,15 @@ services:
   docker-picamera-example:
     build: 
       #image: imagem3
+      dockerfile: Dockerfile
       context: . 
     container_name: docker-picamera-example
     command: python3 picamera.py
-    volumes:
-      - '/home/pi/Images_Cam'
     devices:
-      - '/dev/vchiq:/dev/vchiq'  
-      - '/dev/vcsm:/dev/vcsm'   
-      priveleged: true
+      - "/dev/vchiq:/dev/vchiq"
+      - "/dev/vcsm:/dev/vcsm"
+
+
+
 
 
