@@ -10,6 +10,6 @@ services:
     devices:
       -"/dev/vchiq:/dev/vchiq"  #picamera
       -"/dev/vcsm:/dev/vcsm"  #Videocore Shared Memory 
-    priveleged: true
-    
+      priveleged: true
+
 
