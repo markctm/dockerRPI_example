@@ -19,15 +19,8 @@ services:
       dockerfile: Dockerfile2
       context: . 
     container_name: photo2video
-    command: python3 video_converter.py 
+    command: python3 ./video_converter.py 
     volumes:
       - "/home/pi/Images_Cam:/home/pi/Images_Cam"
       - "/home/pi/temp_video:/home/pi/temp_video"
     
-
-
-
-
-
-
-
