@@ -2,7 +2,7 @@ version: '3'
 services:
   docker-picamera-example:
     #build: 
-    image: imagem5
+    image: imagem7
       #dockerfile: Dockerfile
       #context: . 
     container_name: docker-picamera-examples
@@ -15,7 +15,7 @@ services:
  
   docker_video_converter:
     #build: 
-    image: imagem6
+    image: imagem7
       #dockerfile: Dockerfile
       #context: . 
     container_name: video_converter
