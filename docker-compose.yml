@@ -5,14 +5,27 @@ services:
     #image: imagem5
       dockerfile: Dockerfile
       context: . 
-    container_name: docker-picamera-example
+    container_name: docker-picamera-examples
     command: python3 camera.py
     volumes:
       - "/home/pi/Images_Cam:/home/pi/Images_Cam"
     devices:
       - "/dev/vchiq:/dev/vchiq"
       - "/dev/vcsm:/dev/vcsm"
+ 
+  docker_video_converter:
+    build: 
+    image: imagem5
+      #dockerfile: Dockerfile
+      #context: . 
+    container_name: video_converter
+    command: python3 video_converter.py
+    volumes:
+      - "/home/pi/Images_Cam:/home/pi/Images_Cam"
     
+
+
+
 
 
 
