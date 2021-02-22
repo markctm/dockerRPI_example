@@ -4,7 +4,7 @@ import time
 from datetime import datetime
 
 
-
+os.environ["IMAGEIO_FFMPEG_EXE"]="usr/bin/ffmpeg"
 
 
 while(1):
