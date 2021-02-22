@@ -1,10 +1,10 @@
 version: '3'
 services:
   docker-picamera-example:
-    #build: 
-    image: imagem5
-      #dockerfile: Dockerfile
-      #context: . 
+    build: 
+    #image: imagem5
+      dockerfile: Dockerfile
+      context: . 
     container_name: docker-picamera-example
     command: python3 camera.py
     volumes:
