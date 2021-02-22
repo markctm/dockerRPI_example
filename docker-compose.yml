@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
       context: . 
     container_name: docker-picamera-example
-    command: python3 picamera.py
+    command: python3 camera.py
     devices:
       - "/dev/vchiq:/dev/vchiq"
       - "/dev/vcsm:/dev/vcsm"
