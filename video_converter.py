@@ -20,7 +20,7 @@ while(1):
     if len(directory1)>50:
         
         try:
-            os.remove("/home/pi/temp_video/test1.mp4")
+            os.remove("/home/pi/temp_video/temp_video.mp4")
         except:
             pass
         
@@ -40,6 +40,6 @@ while(1):
         
         clip = ImageSequenceClip("/home/pi/Images_Cam/", fps=10)
         #timestamp=datetime.now().isoformat()
-        clip.write_videofile('/home/pi/temp_video/sds.mp4')
+        clip.write_videofile('/home/pi/temp_video/temp_video.mp4')
 
         clip.close()
