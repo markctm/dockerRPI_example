@@ -1,7 +1,7 @@
 version: '3'
 services:
   docker-picamera-example:
-    #build: 
+    build: 
     image: imagem7
       #dockerfile: Dockerfile
       #context: . 
@@ -14,10 +14,10 @@ services:
       - "/dev/vcsm:/dev/vcsm"
  
   photo2video:
-    #build: 
-    image: imagem8
-      #dockerfile: Dockerfile
-      #context: . 
+    build: 
+    #image: imagem8
+      dockerfile: Dockerfile2
+      context: . 
     container_name: photo2video
     command: python3 video_converter.py 
     volumes:
