@@ -10,8 +10,7 @@ RUN apt-get install  libopenjp2-7
 
 ADD requirements.txt ./requirements.txt
 ADD camera.py       ./camera.py
-ADD video_converter.py     ./video_converter.py
-
+ADD video_converter ./video_converter.py
 RUN  python3 -m pip install  --upgrade pip
 RUN  python3 -m pip install  -r requirements.txt 
 
