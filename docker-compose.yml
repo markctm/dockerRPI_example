@@ -13,7 +13,7 @@ services:
       - "/dev/vchiq:/dev/vchiq"
       - "/dev/vcsm:/dev/vcsm"
  
-  photo2video:
+  phototovideo:
     build: 
     #image: imagem8
       dockerfile: Dockerfile2
