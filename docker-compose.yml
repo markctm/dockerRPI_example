@@ -15,10 +15,10 @@ services:
  
   docker_video_converter:
     #build: 
-    image: imagem7
+    image: imagem8
       #dockerfile: Dockerfile
       #context: . 
-    container_name: video_converter
+    container_name: photo2video
     command: python3 video_converter.py
     volumes:
       - "/home/pi/Images_Cam:/home/pi/Images_Cam"
