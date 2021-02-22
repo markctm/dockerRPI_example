@@ -14,7 +14,7 @@ services:
       - "/dev/vcsm:/dev/vcsm"
  
   docker_video_converter:
-    build: 
+    #build: 
     image: imagem5
       #dockerfile: Dockerfile
       #context: . 
