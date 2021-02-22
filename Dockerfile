@@ -15,9 +15,7 @@ ADD video_converter.py     ./video_converter.py
 RUN  python3 -m pip install  --upgrade pip
 RUN  python3 -m pip install  -r requirements.txt 
 
-CMD ["python3",  "./camera.py"]
 
-CMD ["python3",  "./video_converter.py"]
  
 
 
