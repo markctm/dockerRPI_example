@@ -1,8 +1,9 @@
 version: '3'
 services:
   docker-picamera-example:
-    build: 
-      image: imagem3
+    image: imagem3
+    #build: 
+      
       #dockerfile: Dockerfile
       #: . 
     container_name: docker-picamera-example
