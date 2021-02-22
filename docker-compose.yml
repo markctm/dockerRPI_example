@@ -18,7 +18,7 @@ services:
     #image: imagem8
       dockerfile: Dockerfile2
       context: . 
-    container_name: photo2video
+    container_name: photo4video
     command: python3 ./video_converter.py 
     volumes:
       - "/home/pi/Images_Cam:/home/pi/Images_Cam"
