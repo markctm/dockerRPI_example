@@ -17,6 +17,6 @@ with picamera.PiCamera() as camera:
     while(1):
         
         timestamp=datetime.now().isoformat()
-        camera.capture("%s.png" %timestamp)
+        camera.capture("/home/pi/Images_Cam/%s.png" %timestamp)
         time.sleep(1)
 
