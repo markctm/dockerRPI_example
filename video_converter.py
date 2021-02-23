@@ -33,13 +33,18 @@ while(1):
             print("file removed" + str(directory1[i]))
 
 
-        base_dir = os.path.realpath("/home/pi/Images_Cam/")
-        directory=sorted(os.listdir('/home/pi/Images_Cam/'))
-        print(directory)
+        file = open("copy.txt", "w") 
+        file.write("Video deletados !!!") 
+        file.close() 
+
+
+        #base_dir = os.path.realpath("/home/pi/Images_Cam/")
+        #directory=sorted(os.listdir('/home/pi/Images_Cam/'))
+        #print(directory)
     
         
-        clip = ImageSequenceClip("/home/pi/Images_Cam/", fps=10)
+        #clip = ImageSequenceClip("/home/pi/Images_Cam/", fps=10)
         #timestamp=datetime.now().isoformat()
-        clip.write_videofile('/home/pi/temp_video/temp_video.mp4')
+        #clip.write_videofile('/home/pi/temp_video/temp_video.mp4')
 
-        clip.close()
+        #clip.close()
