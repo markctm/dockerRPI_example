@@ -23,6 +23,7 @@ services:
       IMAGEIO_FFMPEG_EXE: /usr/bin/ffmpeg 
     command: python3 ./video_converter.py 
     volumes:
+       -"/usr/local/lib:/usr/local/lib"
        - "/usr/bin/ffmpeg:/usr/bin/ffmpeg"
        - "/home/pi/Images_Cam:/home/pi/Images_Cam"
        - "/home/pi/temp_video:/home/pi/temp_video"
