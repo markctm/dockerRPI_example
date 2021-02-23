@@ -13,7 +13,7 @@ services:
       - "/dev/vchiq:/dev/vchiq"
       - "/dev/vcsm:/dev/vcsm"
  
-  phototovideo:
+  phototovideo:cd
     build: 
     #image: imagem8
       dockerfile: Dockerfile2
@@ -24,6 +24,7 @@ services:
     command: python3 ./video_converter.py 
     volumes:
        - "/usr/lib:/usr/lib"
+       - "/usr/local/lib:/usr/local/lib"
        - "/usr/bin/ffmpeg:/usr/bin/ffmpeg"
        - "/home/pi/Images_Cam:/home/pi/Images_Cam"
        - "/home/pi/temp_video:/home/pi/temp_video"
