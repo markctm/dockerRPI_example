@@ -33,7 +33,7 @@ while(1):
             print("file removed" + str(directory1[i]))
 
 
-        file = open("copy.txt", "w") 
+        file = open("/home/pi/temp_video/copy.txt", "w") 
         file.write("Video deletados !!!") 
         file.close() 
 
